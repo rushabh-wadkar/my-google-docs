@@ -17,7 +17,7 @@ db.once("open", function () {
   console.log("Connected to Database");
 });
 
-const PORT = process.env.SERVER_PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 const server = http.createServer(app);
 const io = require("socket.io")(server, {
