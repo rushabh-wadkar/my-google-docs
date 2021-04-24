@@ -33,7 +33,7 @@ const TextEditor = () => {
     setEditor(q);
 
     // setting up the socket
-    const s = io("http://localhost:3001", {
+    const s = io("https://my-google-docs-clone-backend.herokuapp.com/", {
       withCredentials: true,
       extraHeaders: {
         "google-docs-clone-headers": "header",
